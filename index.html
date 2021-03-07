@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+			canvas { display: block; }
+			.help {
+				position: absolute;
+				left: 50px;
+				bottom: 10px;
+				font-size: 24px;
+			}
+			.score {
+				position: absolute;
+				left: 50px;
+				top: 10px;
+			}
+
+			.end {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				visibility: hidden;
+				font-size: 48px;
+			}
+		</style>
+	</head>
+	<body>
+		<script id="mainJs" src="dist/bundle.js"></script>
+		<script>
+			// Our Javascript will go here.
+		</script>
+
+		<div class="help" id="help" >
+			使用方向建移動 空白艦發射子彈 攻擊紅色方塊
+		</div>
+		<div class="score" id="score" >
+			score: 0
+		</div>
+		<div class="end" id="end" >
+			遊戲結束
+		</div>
+
+	</body>
+</html>
